@@ -14,74 +14,67 @@ public class Person {
 
 
     public Person() {
-         String name = getName();
-         int age = getAge();
-         Double weigth = getWeigth();
-          String eyeColor = getEyeColor();
-          String hairColor = getHairColor();
+         this.name = "";
+         this.age = Integer.MAX_VALUE;
 
     }
 
     public Person(int age) {
-        getAge();
+        this.age = 5;
 
     }
 
-    public Person(String name) {
-        getName();
+    public Person( String name) {
+        this.name = "Leon";
     }
 
-    public Person(Double weigth) {
-        getWeigth();
-    }
-
-    public Person(String eyeColor) {
-        getEyeColor();
-    }
-
-    public Person(String "hairColor") {
-        getHairColor();
-    }
-
-    public Person(String name, int age, Double weigth, String eyeColor, String hairColor;) {
+    public Person(String name, int age){
+        this.name = "Leon";
+        this.age = 5;
     }
 
     public void setName(String name) {
+        this.name = name;
     }
 
     public void setAge(int age) {
+        this.age = age;
     }
 
     public void setWeigth(Double weigth) {
+        this.weigth = weigth;
 
     }
 
     public void setEyeColor(String eyeColor) {
+        this.eyeColor = eyeColor;
 
     }
 
     public void setHairColor(String hairColor) {
+        this.hairColor = hairColor;
 
     }
 
     public String getName() {
-        return null;
+
+        return name;
     }
 
     public Integer getAge() {
-        return null;
+        return age;
     }
 
     public Double getWeigth() {
-        return null;
+        return weigth;
     }
 
     public String getEyeColor() {
-        return null;
+        return eyeColor;
     }
 
     public String getHairColor() {
-        return null;
+        return hairColor;
     }
 
 }
